@@ -9,8 +9,8 @@ import SectionBlog from '../components/section-blog';
 import SectionExperience from '../components/section-experience';
 import SectionProjects from '../components/section-projects';
 import SectionSkills from '../components/section-skills';
-import SEO from '../components/seo';
-
+import SEO from '../components/seo'
+import ParticlesContainer from '../components/layout/ParticlesContainer';
 const Index = ({ data }) => {
   const about = get(data, 'site.siteMetadata.about', false);
   const projects = get(data, 'site.siteMetadata.projects', false);
@@ -20,17 +20,22 @@ const Index = ({ data }) => {
   const noBlog = !posts || !posts.length;
 
   return (
-    <Layout>
-      <SEO />
-      <Header metadata={data.site.siteMetadata} noBlog={noBlog} />
-      {about && <SectionAbout about={about} />}
-      {projects && projects.length && <SectionProjects projects={projects} />}
-      {!noBlog && <SectionBlog posts={posts} />}
-      {experience && experience.length && (
-        <SectionExperience experience={experience} />
-      )}
-      {skills && skills.length && <SectionSkills skills={skills} />}
-    </Layout>
+
+
+
+        <Layout>
+          <SEO />
+          <ParticlesContainer/>
+          <Header metadata={data.site.siteMetadata} noBlog={noBlog} />
+          {about && <SectionAbout about={about} />}
+          {projects && projects.length && <SectionProjects projects={projects} />}
+          {!noBlog && <SectionBlog posts={posts} />}
+          {experience && experience.length && (
+            <SectionExperience experience={experience} />
+          )}
+          {skills && skills.length && <SectionSkills skills={skills} />}
+        </Layout>
+
   );
 };
 

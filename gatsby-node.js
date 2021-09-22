@@ -1,9 +1,9 @@
-const path = require(`path`);
+ const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
-
+//using irem handling 
   const blogPost = path.resolve(`./src/templates/blog-post.jsx`);
   const result = await graphql(
     `

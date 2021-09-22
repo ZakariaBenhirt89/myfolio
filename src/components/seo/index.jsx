@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import React from 'react';
+import React from 'react'; 
 
 const SEO = ({ description, lang, meta, title }) => {
   const { site } = useStaticQuery(
@@ -17,11 +17,10 @@ const SEO = ({ description, lang, meta, title }) => {
       }
     `
   );
-
   const metaDescription = description || site.siteMetadata.description;
   const defaultTitle = site.siteMetadata?.title;
   const finalTitle = title ? `${title} | ${defaultTitle}` : defaultTitle;
-
+  console.table(site)
   return (
     <Helmet
       htmlAttributes={{

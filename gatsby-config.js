@@ -3,31 +3,31 @@ module.exports = {
     // Site URL for when it goes live
     siteUrl: `https://elastic-meninsky-aa7c74.netlify.app/`,
     // Your Name
-    name: 'Ryan Fitzgerald',
+    name: 'Zakaria Benhirt',
     // Main Site Title
-    title: `Ryan Fitzgerald | Full-Stack Developer`,
+    title: `Zakaria Benhirt | Full-Stack Developer`,
     // Description that goes under your name in main bio
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit, ipsum.`,
+    description: `just another portfolio 🙃 `,
     // Optional: Twitter account handle
-    author: `@rfitzio`,
+    author: `@ZikoBen`,
     // Optional: Github account URL
     github: `https://github.com/ryanfitzgerald`,
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/ryanafitzgerald/`,
     // Content of the About Me section
-    about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis porro cumque ea error ab voluptatem. Temporibus adipisci exercitationem similique itaque quibusdam laudantium, qui molestiae quas, aut amet animi id.`,
+    about: `After studying mathematics and physics for my four years bachelor's degree, I took some cs courses. c++ fundamentals and scientific calculation with python and databases basics and implementation. With self-taught experience in mobile and web development.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
-        name: 'Devfolio',
+        name: 'My Portfolio',
         description:
           'A zero-config and blazing fast personal site + blog built with GatsbyJs and TailwindCSS',
         link: 'https://github.com/RyanFitzgerald/devfolio',
       },
       {
-        name: 'ChromeExtensionKit',
+        name: 'Recommendations system with python for traders',
         description:
-          'Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates',
+          'A recommendation system i have built using python trained models and ',
         link: 'https://chromeextensionkit.com/?ref=devfolio',
       },
       {
@@ -60,11 +60,11 @@ module.exports = {
       {
         name: 'Languages & Frameworks',
         description:
-          'JavaScript (ES6+), Golang, Node.js, Express.js, React, Ruby on Rails, PHP',
+          'JavaScript (ES6+), SpringBoot, Node.js, Express.js, React, Laravel, Dart',
       },
       {
         name: 'Databases',
-        description: 'MongoDB, PostreSQL, MySQL',
+        description: 'MongoDB, PostgreSQL, MySQL',
       },
       {
         name: 'Other',
@@ -133,6 +133,8 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/icon.png`,
       },
-    },
+    },{ 
+      resolve : `gatsby-plugin-dark-mode`,
+    }
   ],
 };

@@ -1,6 +1,7 @@
 import { Link } from 'gatsby';
 import get from 'lodash/get';
 import React from 'react';
+import '../../css/index.css'
 
 import profileImg from '../../images/profile.jpg';
 

@@ -11,7 +11,9 @@ const classes = {
   title: 'mt-16 text-4xl text-gray-900 font-bold',
   date: 'text-gray-600 font-light',
 };
-
+   //BlogPst data scrapper 
+   //data handling isssues 
+   //:)
 const BlogPost = ({ data }) => {
   const post = data.markdownRemark;
 
